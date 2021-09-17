@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DOM Demo</title>
+</head>
+<body>
+    <h1>DOM</h1>
+    <p>This is DOM Demo.</p>
+    <button onclick="showData()">Show</button>
+
+    <script>
+        function showData(){
+            var ptag=document.createElement("p")
+            var tNode=document.createTextNode("this is new node")
+
+            ptag.appendChild(tNode)
+            document.body.appendChild(ptag)
+        }
+
+        
+
+    </script>
+</body>
+</html>
